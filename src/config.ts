@@ -1,5 +1,6 @@
-export const FRIEND_NAME = "NAME";
-export const BIRTHDAY_DATE = "2026-10-15"; // YYYY-MM-DD
+export const FRIEND_NAME = "vimalnath";
+export const BIRTHDAY_DATE = "2026-09-04T00:00:00"; // YYYY-MM-DDTHH:MM:SS
+export const YOUTUBE_MUSIC_LINK = "https://youtube.com/shorts/0x2tLcgdjPc?si=JrA3aqYVm6dpkxvI"; // Replace with your song link
 
 export const BIRTHDAY_MESSAGE = `Dear ${FRIEND_NAME},
 
@@ -18,13 +19,67 @@ Happy Birthday, ${FRIEND_NAME}.
 Here's to another crazy year.`;
 
 export const PHOTO_DATA = [
-  { image: "/images/photo1.jpg", caption: "Good times" },
-  { image: "/images/photo2.jpg", caption: "Crazy nights" },
-  { image: "/images/photo3.jpg", caption: "No plans. Best plans." },
-  { image: "/images/photo4.jpg", caption: "Food = Life" },
-  { image: "/images/photo5.jpg", caption: "Us being normal for once" },
-  { image: "/images/photo6.jpg", caption: "Another questionable decision" },
-  { image: "/images/photo7.jpg", caption: "Forever memories" },
+  {
+    image: "/images/photo1.jpeg",
+    caption: "Ohhh my Godddd! Bro really said, look at me! 😂"
+  },
+
+
+
+  {
+    image: "/images/photo6.jpeg",
+    caption: "Came for the place, stayed for the memories."
+  },
+
+  {
+    image: "/images/photo7.jpeg",
+    caption: "Best duo? I think we have a winner here! ❤️"
+  },
+
+  {
+    image: "/images/photo8.jpeg",
+    caption: "When the gym finally starts showing results 💪😂"
+  },
+
+  {
+    image: "/images/photo9.jpeg",
+    caption: "That look when you know you look good 😎"
+  },
+
+  {
+    image: "/images/photo10.jpeg",
+    caption: "Just casually being everyone's favourite human."
+  },
+
+  {
+    image: "/images/photo11.jpeg",
+    caption: "Cold outside. Rockstar inside. 😂"
+  },
+
+  {
+    image: "/images/photo12.jpeg",
+    caption: "Just me, my ride, and absolutely no plans."
+  },
+
+  {
+    image: "/images/photo13.jpeg",
+    caption: "Some days just deserve a spot in the memories."
+  },
+
+  {
+    image: "/images/photo14.jpeg",
+    caption: "Caught in a moment… literally doing nothing 😂"
+  },
+
+  {
+    image: "/images/photo15.jpeg",
+    caption: "This picture needs no explanation."
+  },
+
+  {
+    image: "/images/photo16.jpeg",
+    caption: "And then there are moments you just keep."
+  }
 ];
 
 export const FUNNY_FACTS_DATA = [

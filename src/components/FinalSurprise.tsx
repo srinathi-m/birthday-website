@@ -72,7 +72,7 @@ const FinalSurprise: React.FC<FinalSurpriseProps> = ({ onReplay }) => {
             className="w-full flex flex-col items-center z-10 px-4"
           >
             {/* Flash effect */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 1 }}
               animate={{ opacity: 0 }}
               transition={{ duration: 1 }}
@@ -86,9 +86,10 @@ const FinalSurprise: React.FC<FinalSurpriseProps> = ({ onReplay }) => {
               transition={{ duration: 1, delay: 0.5, type: 'spring' }}
               className="relative w-64 h-64 md:w-96 md:h-96 rounded-full overflow-hidden border-8 border-white/10 shadow-[0_0_50px_rgba(255,71,126,0.3)] mb-12 z-20"
             >
-              <img 
-                src="/images/hero.jpg" 
-                alt="Happy Birthday Hero" 
+
+              <img
+                src="/images/photo3.jpeg"
+                alt="Happy Birthday Hero"
                 className="w-full h-full object-cover"
                 onError={(e) => {
                   e.currentTarget.style.display = 'none';
@@ -112,7 +113,7 @@ const FinalSurprise: React.FC<FinalSurpriseProps> = ({ onReplay }) => {
               <h2 className="text-4xl md:text-6xl font-bold text-white mb-8 tracking-widest uppercase">
                 {FRIEND_NAME}!
               </h2>
-              
+
               <p className="text-xl md:text-2xl text-gray-300 font-light italic mb-16 max-w-2xl mx-auto handwritten">
                 "Here's to another year of questionable decisions and unforgettable memories."
               </p>
@@ -121,8 +122,8 @@ const FinalSurprise: React.FC<FinalSurpriseProps> = ({ onReplay }) => {
                 <Button onClick={triggerConfetti} className="text-lg px-12 py-5 shadow-[0_0_20px_rgba(255,71,126,0.5)] hover:shadow-[0_0_40px_rgba(255,71,126,0.8)]">
                   LET'S CELEBRATE 🎉
                 </Button>
-                
-                <button 
+
+                <button
                   onClick={onReplay}
                   className="text-sm font-semibold tracking-widest uppercase text-gray-400 hover:text-white transition-colors py-4 px-8 border border-white/10 rounded-full hover:bg-white/5"
                 >
