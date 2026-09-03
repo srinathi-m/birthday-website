@@ -6,6 +6,7 @@ import FunnyFacts from './components/FunnyFacts';
 import BirthdayQuiz from './components/BirthdayQuiz';
 import PersonalMessage from './components/PersonalMessage';
 import FinalSurprise from './components/FinalSurprise';
+import FavoriteSong from './components/FavoriteSong';
 import MusicPlayer from './components/Shared/MusicPlayer';
 import ProgressIndicator from './components/Shared/ProgressIndicator';
 import { AnimatePresence, motion } from 'framer-motion';
@@ -14,10 +15,11 @@ const Section = {
   OPENING: 0,
   COUNTDOWN: 1,
   MEMORIES: 2,
-  FACTS: 3,
-  QUIZ: 4,
-  MESSAGE: 5,
-  SURPRISE: 6,
+  SONG: 3,
+  FACTS: 4,
+  QUIZ: 5,
+  MESSAGE: 6,
+  SURPRISE: 7,
 } as const;
 
 type Section = typeof Section[keyof typeof Section];
@@ -45,6 +47,8 @@ function App() {
         return <Countdown onNext={nextSection} />;
       case Section.MEMORIES:
         return <MemoriesGallery onNext={nextSection} />;
+      case Section.SONG:
+        return <FavoriteSong onNext={nextSection} setIsGlobalMusicPlaying={setIsMusicPlaying} />;
       case Section.FACTS:
         return <FunnyFacts onNext={nextSection} />;
       case Section.QUIZ:
@@ -63,7 +67,7 @@ function App() {
       <MusicPlayer isPlaying={isMusicPlaying} togglePlay={() => setIsMusicPlaying(!isMusicPlaying)} />
 
       {currentSection > Section.OPENING && (
-        <ProgressIndicator currentSection={currentSection} totalSections={7} />
+        <ProgressIndicator currentSection={currentSection} totalSections={8} />
       )}
 
       <div className="fixed bottom-4 left-4 md:left-6 z-40 pointer-events-none">

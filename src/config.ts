@@ -113,16 +113,16 @@ export const FUNNY_FACTS_DATA = [
 export const QUIZ_DATA = [
   {
     question: "Where did we first meet?",
-    options: ["College", "Somewhere random", "We don't talk about it"],
-    correctIndex: 0,
+    options: ["College", "Tuition", "Somewhere random"],
+    correctIndex: 1,
     correctResponse: "Correct. You actually remember!",
     incorrectResponse: "Wrong. We need to talk.",
   },
   {
-    question: "What is my favorite excuse to cancel plans?",
+    question: "What is your favorite excuse to cancel plans?",
     options: ["I'm too tired", "My dog ate my keys", "Just straight up ghosting"],
     correctIndex: 0,
-    correctResponse: "You know me too well 😂",
+    correctResponse: "I am glad, you accepted! 😂",
     incorrectResponse: "Nice try, but you know the truth.",
   },
   {
