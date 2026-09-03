@@ -66,7 +66,7 @@ function App() {
         <ProgressIndicator currentSection={currentSection} totalSections={7} />
       )}
 
-      <div className="fixed bottom-4 left-0 w-full text-center z-40 pointer-events-none">
+      <div className="fixed bottom-4 left-4 md:left-6 z-40 pointer-events-none">
         <p className="text-[10px] md:text-xs text-white/30 tracking-widest uppercase">Crafted by Sri ✦</p>
       </div>
 
